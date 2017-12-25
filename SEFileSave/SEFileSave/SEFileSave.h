@@ -29,4 +29,13 @@
 + (void)deleteFileWithFileName:(NSString *)fileName
                        success:(void (^)())success
                        failure:(void (^)())failure;
+
+
+//下载(小文件)
++ (void)downLoadFileWithFileName:(NSString *)fileName
+                         withUrl:(NSString *)url
+                         success:(void (^)(NSString *path))success
+                         failure:(void (^)())failure;
+
 @end
+
